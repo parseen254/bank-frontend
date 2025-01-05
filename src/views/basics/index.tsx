@@ -1,11 +1,7 @@
-
+import { Bank } from "../../components/Bank";
 import { FC } from "react";
-import { SignMessage } from '../../components/SignMessage';
-import { SendTransaction } from '../../components/SendTransaction';
-import { SendVersionedTransaction } from '../../components/SendVersionedTransaction';
 
-export const BasicsView: FC = ({ }) => {
-
+export const BasicsView: FC = ({}) => {
   return (
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex flex-col">
@@ -14,9 +10,7 @@ export const BasicsView: FC = ({ }) => {
         </h1>
         {/* CONTENT GOES HERE */}
         <div className="text-center">
-          <SignMessage />
-          <SendTransaction />
-          <SendVersionedTransaction />
+          <Bank />
         </div>
       </div>
     </div>
